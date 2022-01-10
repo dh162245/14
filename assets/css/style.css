@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    background: #333;
+}
+
+section{
+    background: green;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+}
+
+article{
+    background: red;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    right: 0%;
+}
+
+a{
+    color: #fff;
+    font-size: 50px;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 2rem 5rem;
+}
+
+main section a{
+    position: relative;
+    top: 50%;
+    left: 40%;
+}
+
+main article a{
+    position: relative;
+    top: 50%;
+    left: 40%;
+}
