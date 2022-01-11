@@ -10,44 +10,59 @@
 
 main{
     background: #333;
-    width: 100%;
 }
 
 section{
     background: green;
     width: 50vw;
-    height: auto;
+    height: calc(100%);
     position: absolute;
+    right: 100%;
 }
-
-
 
 article{
     background: red;
     width: 50vw;
-    height: calc(100%);
-    overflow: auto;
+    height: auto;
     position: absolute;
-    left: 98.3%;
-    top: 0%;
+    right: 0%;
 }
 
 a{
     color: #fff;
     font-size: 50px;
     text-decoration: none;
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 2rem 5rem;
     font-family: 'Lato', sans-serif;
 }
 
-
-
-main article a{
+main section a:nth-of-type(1){
+    border: 2px solid white;
     position: fixed;
     top: 40%;
-    right: 20%;
+    left: 16%;
 }
+
+main article p a{
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main article p a:hover{
+    text-decoration: underline;
+}
+
+
+section a:hover{
+    background: url('../img/terminal.jpg');
+    background-size: contain;
+    transform: scale(2, 3);
+    color: transparent;
+    transition: 0.5s ease-out;
+}
+
+
 
 p{
     font-family: 'Courier New', Courier, monospace;
@@ -68,12 +83,6 @@ span{
     background-color: black;
 }
 
-
-
-article a:hover{
-    background: url('../img/terminal.jpg');
-    background-size: contain;
-    transform: scale(2, 3);
-    color: transparent;
-    transition: 0.5s ease-out;
+article p:nth-of-type(1), p:nth-of-type(3){
+    font-size: 50px;
 }
